@@ -22,6 +22,22 @@
             return $this->connection;
         }
 
+        public function user_data($loginuser,$conn)
+        {
+            $sql = "SELECT * FROM user WHERE username =  '" . $loginuser."'";
+            $result = $conn ->query($sql);
+            $row = $result->fetch_assoc();
+            return $row;
+        }
+
+        public function user_sesions($loginuser,$conn)
+        {
+            $sql = "SELECT * FROM sesion WHERE user =  '" . $loginuser."'";
+            $result = $conn ->query($sql);
+            $row = $result->fetch_assoc();
+            return $row;
+        }
+        
         public function __destruct()
         {
             if($this->connection)
@@ -29,5 +45,7 @@
                 mysqli_close($this->connection);
             }
         }  
+
+       
     }
 ?>

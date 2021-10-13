@@ -24,13 +24,15 @@
                             <th scope="col-2">Diagnóstico</th>
                             <th scope="col-2">Clínica</th>
                             <th scope="col-1">Edad</th>
-                            <th scope="col-1">More</th>
+                            <th scope="col" class = "text-center">More</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <?php
                             foreach($result as $row){
+                                $username = $row["username"];
+                                echo $username;
                         ?>
                         <tr>
                             <td scope="row"><?php echo $row["lastname"]; ?></td>
@@ -38,6 +40,7 @@
                             <td><?php echo $row["injury"]; ?></td>
                             <td><?php echo  $row["clinic"]; ?></td>
                             <td><?php echo  $row["age"]; ?></td>
+                            <td class = "text-center"><p><a href="user.php?user=<?php echo $username?>">...</a></p></td>
                         </tr>
                         <?php
                             }

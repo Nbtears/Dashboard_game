@@ -2,7 +2,7 @@
     <footer class="container-fluid fixed-bottom bg-success">
         <div class="row">
             <div class="col-md text-center text-light">
-                @hi
+                Save The Axo
             </div>
         </div>
     </footer>

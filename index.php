@@ -1,5 +1,5 @@
-<?php include 'header.php'; ?>
-<?php include 'footer.php'; ?>
+<?php include 'models/header_dash.php'; ?>
+<?php include 'models/footer_dash.php'; ?>
 <?php
     include_once "conexion.php";
     $temp = new Connection();
@@ -32,7 +32,6 @@
                         <?php
                             foreach($result as $row){
                                 $username = $row["username"];
-                                echo $username;
                         ?>
                         <tr>
                             <td scope="row"><?php echo $row["lastname"]; ?></td>

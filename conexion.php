@@ -29,10 +29,5 @@
                 mysqli_close($this->connection);
             }
         }  
-
-        public function sayhi()
-        {
-            echo "hi";
-        }
     }
 ?>

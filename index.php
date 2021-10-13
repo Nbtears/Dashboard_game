@@ -24,7 +24,7 @@
                             <th scope="col-2">Diagnóstico</th>
                             <th scope="col-2">Clínica</th>
                             <th scope="col-1">Edad</th>
-                            <th scope="col" class = "text-center">More</th>
+                            <th scope="col" class = "text-center">Más</th>
                         </tr>
                     </thead>
                     <tbody>

@@ -3,12 +3,6 @@
     include 'models/footer_dash.php';
     include 'conexion.php';
 
-    $username = $_GET["user"];
-    $temp = new Connection();
-    $conn = $temp->getConnection();
-    $data = $temp->user_data($username,$conn);
-    $sesion = $temp->user_sesions($username,$conn);
-    $info = $temp->user_game($sesion["id"],$conn);
 ?>
 
 <div class="container mt-3 mb-3">
@@ -32,7 +26,7 @@
       <div class="card bg-success bg-opacity-25 mt-3 mb-2">
         <h5 class="card-title text-center mt-3">Duración</h5>
         <div class="card-body">
-          <p class="card-text text-center"><?php echo $sesion["duration"]?> min</p></p>
+          <p class="card-text text-center"><?php echo $username?></p></p>
         </div>
       </div>
     </div>
@@ -41,7 +35,7 @@
       <div class="card bg-success bg-opacity-25 mt-3 mb-2">
         <h5 class="card-title text-center mt-3">Ángulo max</h5>
         <div class="card-body">
-          <p class="card-text text-center"><?php echo $info["angle_max"]?>°</p></p>
+          <p class="card-text text-center"><?php echo $username?></p></p>
         </div>
       </div>
     </div>
@@ -65,4 +59,3 @@
     </div>
   </div>
 </div>
-

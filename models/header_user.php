@@ -11,8 +11,30 @@
 
     </head>
   <body>
-  <nav class="navbar navbar-light bg-success">
-    <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1 text-light">Save The Axo</span>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success text-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-light" href="#">Save The axo</a>
+    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-light"></span>
+    </button>
+    <div class="collapse navbar-collapse text-light" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-light" aria-current="page" href="index.php">Dashboard</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link active text-light" href="#">Última sesión</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="last_5.php">Ultimas 5 sesiones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Todas las sesiones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled text-light">Archivo</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>

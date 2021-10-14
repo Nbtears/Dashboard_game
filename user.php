@@ -28,51 +28,63 @@
       </div>
     </div>
 
-    <div class="col-md-6 col-lg-2">
-      <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-        <h5 class="card-title text-center mt-3">Duración</h5>
-        <div class="card-body">
-          <p class="card-text text-center"><?php echo $sesion["duration"]?> min</p></p>
+    <div class="col-lg-10">
+      <div class="row">
+        <div class="col-md-6 col-lg-2">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+            <h5 class="card-title text-center mt-3">Duración</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $sesion["duration"]?> min</p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-2">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+            <h5 class="card-title text-center mt-3">Ángulo max</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $info["angle_max"]?>°</p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-2">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+            <h5 class="card-title text-center mt-3">Velocidad max</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $info["vel_max"]?></p></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-2">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+            <h5 class="card-title text-center mt-3">Aceleración max</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $info["acc_max"]?></p></p>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-md-6 col-lg-2">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+            <h5 class="card-title text-center mt-3">Repeticiones</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-2">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+          <h5 class="card-title text-center mt-3">Repeticiones</h5>
+          <div class="card-body">
+            <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col-md-6 col-lg-2">
-      <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-        <h5 class="card-title text-center mt-3">Ángulo max</h5>
-        <div class="card-body">
-          <p class="card-text text-center"><?php echo $info["angle_max"]?>°</p></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-2">
-      <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-        <h5 class="card-title text-center mt-3">Velocidad max</h5>
-        <div class="card-body">
-          <p class="card-text text-center"><?php echo $info["vel_max"]?></p></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-2">
-      <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-        <h5 class="card-title text-center mt-3">Aceleración max</h5>
-        <div class="card-body">
-          <p class="card-text text-center"><?php echo $info["acc_max"]?></p></p>
-        </div>
-      </div>  
-    </div>
-
-    <div class="col-md-6 col-lg-2">
-      <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-        <h5 class="card-title text-center mt-3">Repeticiones</h5>
-        <div class="card-body">
-          <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 

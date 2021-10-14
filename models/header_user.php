@@ -26,7 +26,7 @@
           <a class="nav-link active text-light" href="#">Última sesión</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="last_5.php">Ultimas 5 sesiones</a>
+          <a class="nav-link text-light" href="last_5.php?user=<?php echo $username?>">Ultimas 5 sesiones</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-light" href="#">Todas las sesiones</a>

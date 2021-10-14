@@ -11,10 +11,10 @@
     $info = $temp->user_game($sesion["id"],$conn);
 ?>
 
-<div class="container mt-3 mb-3">
+<div class="container-fluid mt-3 mb-3">
   <div class="row">
-    <div class="col">
-      <div class="card bg-success bg-opacity-25 mt-3 mb-3" style="width: 18rem;">
+    <div class="col-md-6 col-lg-2">
+      <div class="card bg-success text-center bg-opacity-25 mt-3 mb-3"">
         <img src="sources/1.jpg" class="card-img-top rounded-circle">
         <h5 class="card-title text-center mt-2">Información</h5>
         <div class="card-body">
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col-md-6 col-lg-2">
       <div class="card bg-success bg-opacity-25 mt-3 mb-2">
         <h5 class="card-title text-center mt-3">Duración</h5>
         <div class="card-body">
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col-md-6 col-lg-2">
       <div class="card bg-success bg-opacity-25 mt-3 mb-2">
         <h5 class="card-title text-center mt-3">Ángulo max</h5>
         <div class="card-body">
@@ -46,23 +46,33 @@
       </div>
     </div>
 
-    <div class="col">
+    <div class="col-md-6 col-lg-2">
       <div class="card bg-success bg-opacity-25 mt-3 mb-2">
         <h5 class="card-title text-center mt-3">Velocidad max</h5>
         <div class="card-body">
-          <p class="card-text text-center"><?php echo $username?></p></p>
+          <p class="card-text text-center"><?php echo $info["vel_max"]?></p></p>
         </div>
       </div>
     </div>
 
-    <div class="col">
+    <div class="col-md-6 col-lg-2">
       <div class="card bg-success bg-opacity-25 mt-3 mb-2">
         <h5 class="card-title text-center mt-3">Aceleración max</h5>
         <div class="card-body">
-          <p class="card-text text-center"><?php echo $username?></p></p>
+          <p class="card-text text-center"><?php echo $info["acc_max"]?></p></p>
         </div>
       </div>  
     </div>
+
+    <div class="col-md-6 col-lg-2">
+      <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+        <h5 class="card-title text-center mt-3">Repeticiones</h5>
+        <div class="card-body">
+          <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 

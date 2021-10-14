@@ -59,28 +59,47 @@
 
         <div class="col-md-6 col-lg-2">
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-            <h5 class="card-title text-center mt-3">Aceleración max</h5>
+            <h5 class="card-title text-center mt-3">Velocidad prom</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["acc_max"]?></p></p>
+              <p class="card-text text-center"><?php echo $info["vel_avg"]?></p></p>
             </div>
           </div>  
         </div>
 
         <div class="col-md-6 col-lg-2">
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-            <h5 class="card-title text-center mt-3">Repeticiones</h5>
+            <h5 class="card-title text-center mt-3">Aceleración max</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
+              <p class="card-text text-center"><?php echo $info["acc_max"]?></p></p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
+
         <div class="col-md-6 col-lg-2">
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
-          <h5 class="card-title text-center mt-3">Repeticiones</h5>
-          <div class="card-body">
-            <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
+            <h5 class="card-title text-center mt-3">Aceleración prom</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $info["acc_avg"]?></p></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="card bg-light mt-3 mb-2">
+            <h5 class="card-title text-center mt-3 mb-3">Gráficas de avance</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-success bg-opacity-25 mt-3 mb-2">
+            <h5 class="card-title text-center mt-3">Repet</h5>
+            <div class="card-body">
+              <p class="card-text text-center"><?php echo $info["rep"]?></p></p>
+            </div>
           </div>
         </div>
       </div>

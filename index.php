@@ -10,11 +10,11 @@
 
 <div class="container-fluid mt-5">
     <div class="row justify-content-center">
-        <div class="col-md">
+        <div class="col-md-12 col-lg-12">
             <div class="card-header text-center">
                 Lista de pacientes
             </div>
-            <div class="p-4">
+            <div class="col-md-12 col-lg-12">
                 <table class="table">
                     <thead>
                         <tr>

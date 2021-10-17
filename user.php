@@ -14,16 +14,26 @@
 <div class="container-fluid mt-3 mb-3">
   <div class="row">
     <div class="col-md-6 col-lg-2">
-      <div class="card bg-success text-center bg-opacity-25 mt-3 mb-3"">
-        <img src="sources/1.jpg" class="card-img-top rounded-circle">
-        <h5 class="card-title text-center mt-2">Información</h5>
-        <div class="card-body">
-          <p class="card-text text-center">Username: <?php echo $username?></p></p>
-          <p class="card-text text-center">Nombre: <?php echo $data["name"]?></p></p>
-          <p class="card-text text-center">Apellidos: <?php echo $data["lastname"]?></p></p>
-          <p class="card-text text-center">Edad: <?php echo $data["age"]?></p></p>
-          <p class="card-text text-center">Clínica: <?php echo $data["clinic"]?></p></p>
-          <p class="card-text text-center">Diagnóstico: <?php echo $data["injury"]?></p></p>
+      <div class="row">
+        <div class="card bg-success text-center bg-opacity-25 mt-3 mb-3"">
+          <img src="sources/1.jpg" class="card-img-top rounded-circle">
+          <h5 class="card-title text-center mt-2">Información</h5>
+          <div class="card-body">
+            <p class="card-text text-center">Username: <?php echo $username?></p></p>
+            <p class="card-text text-center">Nombre: <?php echo $data["name"]?></p></p>
+            <p class="card-text text-center">Apellidos: <?php echo $data["lastname"]?></p></p>
+            <p class="card-text text-center">Edad: <?php echo $data["age"]?></p></p>
+            <p class="card-text text-center">Clínica: <?php echo $data["clinic"]?></p></p>
+            <p class="card-text text-center">Diagnóstico: <?php echo $data["injury"]?></p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card bg-success text-center bg-opacity-25 mt-3 mb-3"">
+          <h5 class="card-title text-center mt-2">Información</h5>
+          <div class="card-body">
+            <p class="card-text text-center">Username: <?php echo $username?></p></p>
+          </div>
         </div>
       </div>
     </div>
@@ -94,16 +104,32 @@
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-6">
-          <div class="card">
+          <div class="card mt-3 mb-2">
             <div class="card-body">
-              <canvas id="myChart" width="50" height= "25"></canvas>
+              <canvas id="angle" width="50" height= "30"></canvas>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6">
-          <div class="card">
+          <div class="card mt-3 mb-2">
             <div class="card-body">
-              <canvas id="myChart2" width="50" height= "25"></canvas>
+              <canvas id="rep" width="50" height= "30"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <div class="card mt-3 mb-2">
+            <div class="card-body">
+              <canvas id="Vel_Acc" width="50" height= "30"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="card mt-3 mb-2">
+            <div class="card-body">
+              <canvas id="Avg" width="50" height= "30"></canvas>
             </div>
           </div>
         </div>

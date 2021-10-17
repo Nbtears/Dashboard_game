@@ -1,4 +1,7 @@
-const ctx = document.getElementById("myChart").getContext("2d");
+const char1 = document.getElementById("angle").getContext("2d");
+const char2 = document.getElementById("rep").getContext("2d");
+const char3 = document.getElementById("Vel_Acc").getContext("2d");
+const char4 = document.getElementById("Avg").getContext("2d");
 
 const labels = [
     "2012",
@@ -22,8 +25,8 @@ const data = {
         {
             data: [78,20,40,10,80,130,180],
             label: "Ángulo máximo",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(25, 135, 84)',
+            borderColor: 'rgb(25, 135, 84)',
             },
     ],
 };
@@ -42,4 +45,7 @@ const config = {
     },
 };
 
-const myChart = new Chart(ctx,config);
+const Angle_chart = new Chart(char1,config);
+const Rep_chart = new Chart(char2,config);
+const Vel_chart = new Chart(char3,config);
+const Avg_chart = new Chart(char4,config);

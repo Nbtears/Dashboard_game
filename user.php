@@ -124,14 +124,14 @@
         <div class="col-md-6 col-lg-6">
           <div class="card mt-3 mb-2">
             <div class="card-body">
-              <canvas id="angle" width="50" height= "30"></canvas>
+              <canvas id="angle" width="50" height= "35"></canvas>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6">
           <div class="card mt-3 mb-2">
             <div class="card-body">
-              <canvas id="rep" width="50" height= "30"></canvas>
+              <canvas id="rep" width="50" height= "35"></canvas>
             </div>
           </div>
         </div>
@@ -140,14 +140,14 @@
         <div class="col-md-6 col-lg-6">
           <div class="card mt-3 mb-2">
             <div class="card-body">
-              <canvas id="Vel_Acc" width="50" height= "30"></canvas>
+              <canvas id="Vel_Acc" width="50" height= "35"></canvas>
             </div>
           </div>
         </div>
         <div class="col-md-6 col-lg-6">
           <div class="card mt-3 mb-2">
             <div class="card-body">
-              <canvas id="Avg" width="50" height= "30"></canvas>
+              <canvas id="Avg" width="50" height= "35"></canvas>
             </div>
           </div>
         </div>

@@ -61,9 +61,24 @@
         public function all_sesion($loginuser,$conn){
             $sql = "SELECT id, date FROM sesion WHERE user = '" . $loginuser."'";
             $result = $conn ->query($sql);
-            return $result;
+            if ($result->num_rows > 0) {
+                return $result;
+            }
+            else {
+                echo "No data";}
         }
 
+        public function all_games($loginuser,$conn){
+            $sql = "SELECT angle_max, rep_flex, rep_sup, rep_extra, vel_max, acc_max, vel_avg, acc_avg, DATE(sesion.date) as fecha FROM game, sesion WHERE game.sesion = sesion.id AND Sesion.user = 'Dozen'";
+            $result = $conn ->query($sql);
+            $row = array();
+            while($row = $result->fetch_assoc()){
+                $rows[]=$row;
+            } 
+            echo json_encode($rows);
+            return $result;
+        }
+        
         public function total_time($loginuser,$conn){
             $sql = "SELECT SUM(duration) AS 'total' FROM sesion WHERE user= '" . $loginuser."'";
             $result = $conn ->query($sql);

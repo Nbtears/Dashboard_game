@@ -156,5 +156,8 @@
   </div>
 </div>
 
-<script src="/main.js"></script>
-
+<script src="main.js"></script>
+<script>
+ const obj = <?php $graf = $temp->all_games($username,$conn); ?>;
+   setData(obj);
+</script>

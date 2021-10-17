@@ -3,12 +3,15 @@
     include 'models/footer_dash.php';
     include 'conexion.php';
 
+    $time = 0;
     $username = $_GET["user"];
     $temp = new Connection();
     $conn = $temp->getConnection();
     $data = $temp->user_data($username,$conn);
     $sesion = $temp->user_sesions($username,$conn);
     $info = $temp->user_game($sesion["id"],$conn);
+    $all = $temp->all_sesion($username,$conn);
+    $time = $temp->total_time($username,$conn);
 ?>
 
 <div class="container-fluid mt-3 mb-3">
@@ -29,10 +32,18 @@
         </div>
       </div>
       <div class="row">
-        <div class="card bg-success text-center bg-opacity-25 mt-3 mb-3"">
-          <h5 class="card-title text-center mt-2">Información</h5>
+        <div class="card bg-success text-center bg-opacity-25 mt-2 mb-3"">
+          <h5 class="card-title text-center mt-2">Total de sesiones</h5>
           <div class="card-body">
-            <p class="card-text text-center">Username: <?php echo $username?></p></p>
+            <p class="card-text text-center"><?php echo $all->num_rows?></p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card bg-success text-center bg-opacity-25 mt-2 mb-3"">
+          <h5 class="card-title text-center mt-2">Tiempo total</h5>
+          <div class="card-body">
+            <p class="card-text text-center"><?php echo $time?> min</p></p>
           </div>
         </div>
       </div>

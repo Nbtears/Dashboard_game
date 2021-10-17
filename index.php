@@ -14,8 +14,8 @@
             <div class="card-header text-center">
                 Lista de pacientes
             </div>
-            <div class="col-md-12 col-lg-12">
-                <table class="table">
+            <div class="datatable">
+                <table class="table table-hover table-bordered table-responsive">
                     <thead>
                         <tr>
                             <th scope="col-3">Apellidos</th>

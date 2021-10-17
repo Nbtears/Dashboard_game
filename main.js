@@ -79,13 +79,13 @@ function setData(data){
         labels,
         datasets: [
             {
-                data: [40,60,80,100,120,140,160],
+                data: data.map(d => d.vel_max),
                 label: "Velocidad máxima",
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
             },
             {
-                data: [78,20,40,10,80,130,180],
+                data:data.map(d => d.acc_max),
                 label: "Aceleración máxima",
                 backgroundColor: 'rgb(25, 135, 84)',
                 borderColor: 'rgb(25, 135, 84)',
@@ -111,13 +111,13 @@ function setData(data){
         labels,
         datasets: [
             {
-                data: [40,60,80,100,120,140,160],
+                data: data.map(d => d.vel_avg),
                 label: "Velocidad promedio",
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
             },
             {
-                data: [78,20,40,10,80,130,180],
+                data: data.map(d => d.acc_avg),
                 label: "Aceleración promedio",
                 backgroundColor: 'rgb(25, 135, 84)',
                 borderColor: 'rgb(25, 135, 84)',

@@ -40,6 +40,13 @@
 
     <div class="col-lg-10">
       <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="card bg-light mt-3 mb-2">
+            <h5 class="card-title text-center mt-3 mb-3">Última sesión</h5>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-6 col-lg-2">
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
             <h5 class="card-title text-center mt-3">Duración</h5>

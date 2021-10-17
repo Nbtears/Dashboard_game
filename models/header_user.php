@@ -23,13 +23,7 @@
           <a class="nav-link text-light" aria-current="page" href="index.php">Dashboard</a>
         </li>
         <li class="nav-item mr-3">
-          <a class="nav-link active text-light" href="#">Última sesión</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="last_5.php?user=<?php echo $username?>">Ultimas 5 sesiones</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="#">Todas las sesiones</a>
+          <a class="nav-link active text-light" href="#">Usuario</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled text-light">Archivo</a>

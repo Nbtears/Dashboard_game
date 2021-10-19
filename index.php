@@ -14,7 +14,7 @@
             <div class="card-header text-center">
                 Lista de pacientes
             </div>
-            <div class="datatable">
+            <div class="table-responsive">
                 <table class="table table-hover table-bordered table-responsive">
                     <thead>
                         <tr>

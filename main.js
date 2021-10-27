@@ -51,13 +51,6 @@ function setData(data){
                 backgroundColor: 'rgb(25, 135, 84)',
                 borderColor: 'rgb(25, 135, 84)',
                 },
-    
-            {
-                data: data.map(d => d.rep_extra),
-                label: "Mov lateral",
-                backgroundColor: 'rgb(180, 148, 47)',
-                borderColor: 'rgb(180, 148, 47)',
-                },
         ],
     };
     

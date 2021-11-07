@@ -71,7 +71,7 @@
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
             <h5 class="card-title text-center mt-3">Ángulo max</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["angle_max"]?>°</p></p>
+              <p class="card-text text-center"><?php echo $info["angle_max"]?> °</p></p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
             <h5 class="card-title text-center mt-3">Velocidad max</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["vel_max"]?></p></p>
+              <p class="card-text text-center"><?php echo $info["vel_max"]?> °/s</p></p>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
             <h5 class="card-title text-center mt-3">Velocidad prom</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["vel_avg"]?></p></p>
+              <p class="card-text text-center"><?php echo $info["vel_avg"]?> °/s</p></p>
             </div>
           </div>  
         </div>
@@ -98,7 +98,7 @@
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
             <h5 class="card-title text-center mt-3">Aceleración max</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["acc_max"]?></p></p>
+              <p class="card-text text-center"><?php echo $info["acc_max"]?> °/s<sup>2<sup></p></p>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
           <div class="card bg-success bg-opacity-25 mt-3 mb-2">
             <h5 class="card-title text-center mt-3">Aceleración prom</h5>
             <div class="card-body">
-              <p class="card-text text-center"><?php echo $info["acc_avg"]?></p></p>
+              <p class="card-text text-center"><?php echo $info["acc_avg"]?> °/s<sup>2<sup></p></p>
             </div>
           </div>
         </div>

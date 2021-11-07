@@ -20,7 +20,7 @@ function setData(data){
                 borderColor: 'rgb(255, 99, 132)',
             },
             {
-                data: data.map(d => d.ang_avg),
+                data: data.map(d => d.angle_avg),
                 label: "Ángulo promedio",
                 backgroundColor: 'rgb(25, 135, 84)',
                 borderColor: 'rgb(25, 135, 84)',

@@ -33,6 +33,14 @@
       </div>
       <div class="row">
         <div class="card bg-success text-center bg-opacity-25 mt-2 mb-3"">
+          <h5 class="card-title text-center mt-2">Puntuación</h5>
+          <div class="card-body">
+            <p class="card-text text-center"><?php echo $info["score"]?></p></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card bg-success text-center bg-opacity-25 mt-2 mb-3"">
           <h5 class="card-title text-center mt-2">Total de sesiones</h5>
           <div class="card-body">
             <p class="card-text text-center"><?php echo $all->num_rows?></p></p>
